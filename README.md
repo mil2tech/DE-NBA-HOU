@@ -1,16 +1,10 @@
-<img src="igdb.jpeg" alt="drawing" width="150"/>
+<img src="rockets.jpeg" alt="drawing" width="150"/>
 
-# <a name="top"></a>Videogame-Capstone
+# <a name="top"></a>Rockets Data Engineer Challenge
 ![]()
-Kalpana Cohort 2022
+
 
 By:  Jarrid Jones 
-
-<p>
-  <a href="https://github.com/lindyc12" target="_blank">
-    <img alt="Lindy" src="https://img.shields.io/github/followers/lindyc12?label=Follow_Lindy&style=social" />
-  </a>
-</p>
 
 <p>
   <a href="https://github.com/mil2tech" target="_blank">
@@ -18,21 +12,12 @@ By:  Jarrid Jones
   </a>
 </p>
 
-<p>
-  <a href="https://github.com/GladyBarrios" target="_blank">
-    <img alt="Glady" src="https://img.shields.io/github/followers/GladyBarrios?label=Follow_Glady&style=social" />
-  </a>
-</p>
+
 **Tools & Technologies Used:** 
 
 ![](https://img.shields.io/static/v1?message=Python&logo=python&labelColor=5c5c5c&color=blueviolet&logoColor=white&label=%20)
 ![](https://img.shields.io/static/v1?message=Pandas&logo=pandas&labelColor=5c5c5c&color=blueviolet&logoColor=white&label=%20)
-![](https://img.shields.io/static/v1?message=SciKit-Learn&logo=scikit-learn&labelColor=5c5c5c&color=blueviolet&logoColor=white&label=%20)
-![](https://img.shields.io/static/v1?message=SciPy&logo=scipy&labelColor=5c5c5c&color=blueviolet&logoColor=white&label=%20)
 ![](https://img.shields.io/static/v1?message=NumPy&logo=numpy&labelColor=5c5c5c&color=blueviolet&logoColor=white&label=%20)
-![](https://img.shields.io/static/v1?message=MatPlotLib&logo=python&labelColor=5c5c5c&color=blueviolet&logoColor=white&label=%20)
-![](https://img.shields.io/static/v1?message=Seaborn&logo=python&labelColor=5c5c5c&color=blueviolet&logoColor=white&label=%20)
-![](https://img.shields.io/static/v1?message=Tableau&logo=tableau&labelColor=5c5c5c&color=blueviolet&logoColor=white&label=%20)
 ![](https://img.shields.io/static/v1?message=Markdown&logo=markdown&labelColor=5c5c5c&color=blueviolet&logoColor=white&label=%20)
 ![](https://img.shields.io/static/v1?message=GitHub&logo=github&labelColor=5c5c5c&color=blueviolet&logoColor=white&label=%20)
 ![](https://img.shields.io/static/v1?message=JupyterLab&logo=jupyter&labelColor=5c5c5c&color=blueviolet&logoColor=white&label=%20)
@@ -43,8 +28,6 @@ By:  Jarrid Jones
 [[Project Planning](#planning)]
 [[Data Dictionary](#dictionary)]
 [[Data Acquire and Prep](#wrangle)]
-[[Data Exploration](#explore)]
-[[Modeling](#model)]
 [[Conclusion](#conclusion)]
 ___
 
@@ -60,22 +43,20 @@ The purpose of this project is to integrate and analyze the diverse range of dat
 
 ### Project Outline:
 
+- Review requirements from stakeholder to determine needs.
+- Review Project source files.
+- Create py scripts for both data acquisition and wrangling.
+- Create final notebook for technical review that consist minimum code.
+- Draft each section of README as project progresses
+- Reach out to stakeholder for review and project completion 
 
         
 ### Inital Questions
 
--  Do video games on certain platforms get better user ratings?
-- what is the most common genre in games that are `subperb` (the highest rating)?
-  - what about the three lowest ratings ((bad, very bad , awful)) ? what is the overall most highest genre in these low rating games?
-  - what about the three highest ratings (good, great, subperb) ? what is the overall most highest genre?
-- what is the most common theme in games that are subperb (the highest rating)?
-  - what is the most common theme in games that are three highest ratings (good, great, subperb)?
-  - what is the most common theme in games that are three lowest ratings ((bad, very bad , awful)
-- Do users rate games with online multiplayer modes higher than games that lack online multiplayer modes?  
+- What file format will be the data?
+- What barriers will I encouter with source data?
+- What format is the data? Structure vs unstructure vs semi-structured
 
-### Target variable?
-  
-  Our target variable is to be able to idetify the diffrent variables that make a videogame have a high rating 
 
 ### Need to haves (Deliverables):
 - First what is needed:
@@ -90,6 +71,8 @@ In order to dowload project files, you will need to have navigate to Houston Roc
 ### Nice to haves (With more time):
 
 - A Dashboard using unified database table.
+
+- EDA notebook to further analyze and investigate and summerize all data sets with visualizations.
 
 
 ***
@@ -145,6 +128,29 @@ In order to dowload project files, you will need to have navigate to Houston Roc
 |   what_is_your_household_income                                     |   survey respondent's household income range                                                               |
 |   what_is_your_highest_level_of_education_that_you_have_attained    |   survey respondent's highest level of education                                                           |
 
+**Unified Database** - single table that used the available data sources to create a unified database table that Business Intelligence & Innovation team could leverage to build fan segments and determine their behaviors.
+
+| email                    	| customer email address                                	|
+|--------------------------	|-------------------------------------------------------	|
+| phone_no                 	| customer phone number                                 	|
+| zip                      	| customer zip code                                     	|
+| ticketing_account_no     	| customer account number for ticket purchases          	|
+| retail_account_no        	| customer account number for retail purchases          	|
+| unique_id                	| customer unique identifer (use as primary key)         	|
+| retail_spent_sum         	| dollar sum of retail purchases of customer            	|
+| ticket_spent_sum         	| dollar sum of ticket purchases of customer            	|
+| overall_sum              	| dollar sum of retail and ticket purchases of customer 	|
+| total_tickets_purchased  	| overall number of tickets customer purchased          	|
+| avg_per_ticket           	| dollar average of customer tickets                    	|
+| favorite_section         	| section of the arena where customer is likely to sit  	|
+| retail_transaction_count 	| sum of all retail purchases of customer               	|
+| ticket_transaction_count 	| sum of all ticket purchases of customer               	|
+| survey_submissions       	| sum of survey submissions of customer                 	|
+| Hat_purchased            	| number of hats customer purchased                     	|
+| Jersey_purchased         	| number of jerseys customer purchased                  	|
+| Misc_purchased           	| number of non apparel items customer purchased        	|
+| T-shirt_purchased        	| number of t-shirts customer purchased                 	|
+
 </details>
 
 ***
@@ -157,8 +163,6 @@ Download project files
 - The first step is to <a href="https://htxrockets.com/redirect/to/id?id=148" target="_blank">download</a> project folder .
 
 Review <a href="https://hourockets.github.io/challenge-bde" target="_blank">requirements</a> of the stakeholder .
-
-  - Create a .gitignore just in case not cloning our repo to exclude env.py , *.json files.
 
 Acquire.py
   - Import these libraries:
@@ -192,355 +196,192 @@ Acquire.py
   ```python
     import pandas as pd
     import json
-    import time
     import acquire
+    import prepare
     import numpy as np
-    import seaborn as sns
+    import os
   ```
-  - Create a function that will import json object into notebook if json object is already saved in /data folder into a dictionary. If json not availble, fuction will acquire data from API endpoint and save as .json
+  - Create a function that will import data sources into notebook using import_data function from acquire.py. Next, it will start data wrangling each dataframe and return each dataframe separately.
   ```python
-      def import_table(variable):
-        path = variable['path']
-        getter = variable['getter']
-        if not os.path.exists(path):
-            wrapper = acquire.run_wrapper()
-            df = getter(wrapper)
-            df = df.reset_index().drop(columns=['index'])
-            df.to_json(path)
-        else:
-            df = pd.read_json(path)
-        return df
-  ```
-  - Create dictionary object that will have a keyword assoiated with a path and a function in the acquire.py 
+      def prep_source_data():
+    retail_data, survey_data, ticket_data = acquire.import_data(json_file = 'retail.json',
+        csv_file1 = 'surveys.csv',
+        csv_file2 = 'tickets.csv')
 
-  ```python
-      config = {
-        'game_library' : {
-            'path' : 'data/game_library.json',
-            'getter': acquire.get_game_library
-        },
-        'genres' : {
-            'path' : 'data/genres.json',
-            'getter': acquire.get_genres
-        },
-        'age_ratings' : {
-            'path' : 'data/age_ratings.json',
-            'getter': acquire.get_age_ratings
-        },
-        'age_rating_desc' : {
-            'path' : 'data/age_rating_desc.json',
-            'getter': acquire.get_age_rating_desc
-        },
-        'collections' : {
-            'path' : 'data/collections.json',
-            'getter': acquire.get_collections
-        },
-        'game_modes' : {
-            'path' : 'data/game_modes.json',
-            'getter': acquire.get_game_modes
-        },
-        'multi_player_modes' : {
-            'path' : 'data/multi_player_modes.json',
-            'getter': acquire.get_multi_player_modes
-        },
-        'platforms' : {
-            'path' : 'data/platforms.json',
-            'getter': acquire.get_platforms
-        },
-        'platform_families' : {
-            'path' : 'data/platform_families.json',
-            'getter': acquire.get_platform_families
-        },
-        'player_perspectives' : {
-            'path' : 'data/player_perspectives.json',
-            'getter': acquire.get_player_perspectives
-        },
-        'themes' : {
-            'path' : 'data/themes.json',
-            'getter': acquire.get_themes
-        },
-        'game_engines' : {
-            'path' : 'data/game_engines.json',
-            'getter': acquire.get_game_engines
-        },
-        'age_rating_desc' : {
-            'path' : 'data/age_rating_desc.json',
-            'getter': acquire.get_age_rating_desc
-        },
+    # Wrangle Retail_data
+
+    # Add new column with transaction total calculation
+    retail_data["transaction_total"] = retail_data["quantity"] * retail_data["unit_price"] + retail_data["shipping_cost"]
+    # Rename the 'account_no' column as 'retail_account_no'
+    retail_data = retail_data.rename(columns={'account_no': 'retail_account_no'})
+
+    ##############################
+    # Wrangle  Survey_data
+
+    # Pivots data on submission ID
+    survey_data = survey_data.pivot(index= 'Submission ID', columns= 'Attribute', values = 'Value')
+
+    # Mapping for 'how_likely_are_you_to_attend_this_event_in_the_future'
+    likelihood_mapping = {
+        '5 - Very Likely': '5 - Very Likely',
+        '4': '4 - Likely',
+        '3': '3 - Neutral',
+        '2': '2 - Unlikely',
+        '1 - Very Unlikely': '1 - Very Unlikely'
     }
+    survey_data['how_likely_are_you_to_attend_this_event_in_the_future'] = survey_data['how_likely_are_you_to_attend_this_event_in_the_future'].map(likelihood_mapping)
+
+    # Mapping for 'how_satisfied_were_you_with_this_event'
+    satisfaction_mapping = {
+        '5 - Very Satisfied': '5 - Very Satisfied',
+        '4': '4 - Likely',
+        '3': '3 - Neutral',
+        '2': '2 - Unlikely',
+        '1 - Very Dissatisfied': '1 - Very Dissatisfied'
+    }
+    survey_data['how_satisfied_were_you_with_this_event'] = survey_data['how_satisfied_were_you_with_this_event'].map(satisfaction_mapping)
+
+    # Mapping for 'how_satisfied_were_you_with_your_retail_experience_at_this_event'
+    retail_experience_mapping = {
+        '5 - Very Satisfied': '5 - Very Satisfied',
+        '4': '4 - Likely',
+        '3': '3 - Neutral',
+        '2': '2 - Unlikely',
+        '1 - Very Dissatisfied': '1 - Very Dissatisfied'
+    }
+    survey_data['how_satisfied_were_you_with_your_retail_experience_at_this_event'] = survey_data['how_satisfied_were_you_with_your_retail_experience_at_this_event'].map(retail_experience_mapping)
+
+    #################################
+
+
+    # Wangle ticket_data
+
+    # Rename the 'account_no' column as 'ticketing_account_no'
+    ticket_data = ticket_data.rename(columns={'account_no': 'ticketing_account_no'})
+    
+    
+    return retail_data, survey_data, ticket_data
   ```
-  - Create a function that retrive all tables from the config dict
+  
+  - Assigning the return values of the prep_source_data() function to three separate variables: retail_data, survey_data, and ticket_data.
   ```python
-      def get_tables():
-          tables = {}
-          for key, value in config.items():
-              tables[key] = import_table(value)
-              # print(f'Completed import for {key}')
-          return tables
+      retail_data, survey_data, ticket_data = prep_source_data()
   ```
   -  Create a function that will create new columns for list objects in a field
   ```python
-      def my_list(column, word):
-        if word in column:
-            return 1
-        else:
-            return 0
+      def prep_fan_account():
+    import prepare
+    
+    retail_data, survey_data, ticket_data = prepare.prep_source_data()
+
+
+    # Concatenate the 'email' columns from ticket_data and retail_data dataframes
+    emails = pd.concat([retail_data['email'], ticket_data['email']])
+
+    # Create a new dataframe with unique email records
+    new_df = pd.DataFrame({'email': emails.unique()})
+
+    # Merge phone_no, zip, retail_account_no, and ticketing_account_no columns from ticket_data and retail_data based on email
+
+    new_df = new_df.merge(ticket_data[['email', 'phone_no', 'zip', 'ticketing_account_no']], on='email', how='left')
+
+    new_df = new_df.merge(retail_data[['email',  'retail_account_no']], on='email', how='left')
+
+    # Fill null values in the specified column with 'N0RAcc0unt'. Value represent fan does not have retail account.
+    new_df['retail_account_no'] = new_df['retail_account_no'].fillna('N0RAcc0unt')
+
+    # Drop duplicates based on the email column
+    new_df = new_df.drop_duplicates(subset=['email'])
+
+    # Reset the index of the dataframe
+    new_df = new_df.reset_index(drop=True)
+
+    # Create a unique ID column using Concatenation 'clutch_' and location + 1 in the dataframe
+    new_df['unique_id'] = 'clutch_' + (new_df.index + 1).astype(str)
+
+    # Merge 'new_df' with the sum of 'transaction_total' per 'retail_account_no' from the 'retail_data' DataFrame, and merge the sum of 'total_price' per 'ticketing_account_no' from the 'ticket_data' DataFrame
+    new_df = new_df.merge(retail_data.groupby('retail_account_no')['transaction_total'].sum().reset_index().rename(columns={'transaction_total': 'retail_spent_sum'}), on='retail_account_no', how='left') \
+                    .merge(ticket_data.groupby('ticketing_account_no')['total_price'].sum().reset_index().rename(columns={'total_price': 'ticket_spent_sum'}), on='ticketing_account_no', how='left')
+
+
+    # Replace NaN with 0 in column
+    new_df['retail_spent_sum'].fillna(0, inplace=True)
+
+    # Create new column with sum of two columns
+    new_df['overall_sum'] = new_df['retail_spent_sum'] + new_df['ticket_spent_sum']
+
+    # Get sum of 'qty' per 'ticketing_account_no' and merge it into 'new_df' as 'total_qty' column
+    new_df = new_df.merge(ticket_data.groupby('ticketing_account_no')['qty'].sum().reset_index().rename(columns={'qty': 'total_tickets_purchased'}), on='ticketing_account_no', how='left') 
+    # Get average of 'ticket_spent_sum' per 'ticketing_account_no' and merge it into 'new_df' as 'avg_per_ticket' column
+    new_df['avg_per_ticket'] = new_df['ticket_spent_sum']/ new_df['total_tickets_purchased']
+
+
+    # Updates column to round to 2 decimal places
+    new_df['avg_per_ticket'] = new_df['avg_per_ticket'].round(2)
+
+    # # Group by 'ticketing_account_no', find mode of 'section', merge and create 'favorite_section' column in 'new_df'
+    new_df = new_df.merge(ticket_data.groupby('ticketing_account_no')['section'].agg(lambda x: x.mode().iat[0]).reset_index().rename(columns={'section': 'favorite_section'}), on='ticketing_account_no', how='left')
+
+    # Create a new column in  with the retail transaction counts per fan and fill nonmatches with 0
+    new_df = new_df.merge(retail_data.groupby('retail_account_no').size().reset_index(name='retail_transaction_count'), on='retail_account_no', how='left').fillna(0)
+
+    # Create a new column in  with the ticket transaction counts per fan and fill nonmatches with 0
+    new_df = new_df.merge(ticket_data.groupby('ticketing_account_no').size().reset_index(name='ticket_transaction_count'), on='ticketing_account_no', how='left').fillna(0)
+
+    # Create a new column in  with the survey respone counts per fan and fill nonmatches with 0
+    new_df = new_df.merge(survey_data.groupby('phone_no').size().reset_index(name='survey_submissions'), on='phone_no', how='left').fillna(0)
+
+
+    new_df = new_df.merge(retail_data.groupby('retail_account_no')['product_type'].value_counts().unstack(fill_value=0).reset_index(), on='retail_account_no', how='left').fillna(0)
+
+    columns_to_concat = ['Hat', 'Jersey', 'Misc', 'T-shirt']
+    new_df.rename(columns={col: col + '_purchased' for col in columns_to_concat}, inplace=True)
+
+    # Convert columns from float to integer
+    columns_to_convert = ['retail_transaction_count', 'survey_submissions', 'Hat_purchased', 'Jersey_purchased', 'Misc_purchased', 'T-shirt_purchased']
+    new_df[columns_to_convert] = new_df[columns_to_convert].astype(int)
+
+    return new_df
   ```
-  - Run the `get_tables()`
-  - Create  variable `to_keep` with a list object of columns to keep
-  - Add a pointer to the game library dictionary object
+  - Assigning the return value of the prep_fan_account() function to a variable: new_df
+   ```python 
+        new_df = prepare.prep_fan_account()
+    ```
+  - Save prepare.py
+
+  - Execute the follow codeblocks to get unified database:
+
+  Imports data to notebook
+   ```python 
+        retail_data, survey_data, ticket_data = acquire.import_data(json_file = 'retail.json',
+    csv_file1 = 'surveys.csv',
+    csv_file2 = 'tickets.csv')
+    ```
+  Wrangles all source data
     ```python 
-        game_library = tables['game_library']
+        retail_data, survey_data, ticket_data = prepare.prep_source_data()
     ```
-  - Trim down to only columns we care about
-    ```python
-        game_library = game_library[to_keep].copy()
+  Wrangles cleaned source data that constructs unified database
+    ```python 
+        new_df = prepare.prep_fan_account()
     ```
-  - Convert `game_library['first_release_date']` to datatime object
-  - Add multiplayer_modes to game_library from the multiplayer_modes endpoint
-    ```python
-        tables['multi_player_modes'].rename(columns={'id': 'multi_player_mode_id'}, inplace=True)
-    # dataframe merging game_library and multi_player_modes with left join. 
-    game_library = pd.merge(
-            game_library, tables['multi_player_modes'], how='left', left_on = 'id', right_on = 'game'
-            ).drop(columns=[ 'game', 
-                            'checksum', 
-                            'multi_player_mode_id', 
-                            'platform'
-                            ])
-    ```
-  - Fill in null values and drop `multiplayer_modes`
-    ```python
-        # fill nulls with 0 or bool lean False
-    game_library['campaigncoop'].fillna(False, inplace = True)
-    game_library['dropin'].fillna(False, inplace = True)
-    game_library['lancoop'].fillna(False, inplace = True)
-    game_library['offlinecoop'].fillna(False, inplace = True)
-    game_library['offlinemax'].fillna(0, inplace = True)
-    game_library['onlinecoop'].fillna(False, inplace = True)
-    game_library['splitscreen'].fillna(False, inplace = True)
-    game_library['offlinecoopmax'].fillna(0, inplace = True)
-    game_library['onlinecoopmax'].fillna(0, inplace = True)
-    game_library['onlinemax'].fillna(0, inplace = True)
-
-    game_library.drop(columns=['multiplayer_modes'], inplace=True)
-    ```
-  - Make a dictionary for id and string to convert id to the nomenclature. Afterwards make new columns for each genre.
-    ```python
-        # Transform genres list to a list of strings instead of a list of ids
-        genres_list = tables['genres'][['id' , 'slug']].sort_values(by='id').reset_index(drop=True)
-        genres_dict = genres_list.set_index('id').to_dict()['slug']
-        def convert_genres_col(random_list):
-            if type(random_list) == list:
-                return [genres_dict[i] for i in random_list]
-            else:  
-                return ['Not available']
-        game_library['genres'] = pd.DataFrame(game_library.genres.apply(convert_genres_col))
-        # list of genres to add
-        genres = ['point-and-click', 'fighting', 'shooter', 'music', 'platform', 'puzzle', 'racing', 'real-time-strategy-rts', 'role-playing-rpg', 'simulator', 'sport', 'strategy', 'turn-based-strategy-tbs', 'tactical', 'hack-and-slash-beat-em-up', 'quiz-trivia', 'pinball', 'adventure', 'indie', 'arcade', 'visual-novel', 'card-and-board-game', 'moba']
-        # function to loop through column list and check for genre
-        for item in genres:
-            game_library[item] = game_library['genres'].apply(my_list, word=item)
-    ```
-  - above code block was utilized to transform columns `game_modes`, `player_perspectives`, `themes`, and `platforms`.
-  - Modified the `dlcs` column to a bootlean column with the following code:
-    ```python
-        # Modified DLC column
-    game_library['dlcs'] = game_library['dlcs'].fillna(0)
-
-    def dlcs_col(df):
-        game_library['has_dlcs'] = np.where(game_library.dlcs != 0, 1, 0)  
-        return df
-    game_library = dlcs_col(game_library)
-    ```
-  - The `ratings` column was used to create a new column `rating_bin` which contained the rating scale nomenclature.
-    ```python
-        game_library['rating_bin'] = pd.cut(game_library.rating, 
-                           bins = [0,10,20, 30, 40, 50, 60, 70, 80, 90, 100],
-                           labels = ['awful','very_bad','bad','unimpressive','average','fair','alright','good','great', 'subperb'])
-    ```
-  - Create a variable `cols_to_drop` with the list object containing 
-        ```python
-        'dlcs',
-        'game_modes',
-        'offlinemax' ,
-        'offlinecoopmax',
-        'onlinecoopmax',
-        'onlinemax',
-        'rating',
-        'age_ratings' 
-        ```
-  - Modify `game_libray` with the following:
-    ```python
-        game_library = game_library.drop(columns=cols_to_drop)
-    ```
-  - Create a function that will convert all True and False values as 0 and 1. Apply the fuction to `game_library`
-    ```python
-        def replace_booleans(data):
-        for col in data:
-            data[col].replace(True, 1, inplace=True)
-            data[col].replace(False, 0, inplace=True)
-
-        replace_booleans(game_library)
-    ```
-  - Create two data frames. One with valid observations in `rating_bin`, and another with null values in 'rating_bin'.
-    ```python
-        game_ratings = game_library[game_library['rating_bin'].notnull()]
-        not_rated = game_library[game_library['rating_bin'].isnull()]
-    ```
-  - Create a function with all the above code tasks into a function `wrangle_data()` that returns `game_library` , `game_ratings` , `not_rated`
-    ```python
-        game_library , game_ratings , not_rated = wrangle_data()
-    ```
-  - Split `game_ratings` into three data samples: train, validate, and test. Create variables `X_train` , `y_train` , `X_validate` , `y_validate` , `X_test`, and `y_test`.
-    ```python
-       def split(game_ratings, stratify_by='rating_bin'):
-          # split df into train_validate 
-          train_validate, test = train_test_split(game_ratings, test_size=.20, random_state=13)
-          train , validate = train_test_split(train_validate, test_size=.3, random_state=13)
-          X_train = train.drop(columns=['rating_bin'])
-          y_train = train[['rating_bin']]
-
-          X_validate = validate.drop(columns=['rating_bin'])
-          y_validate = validate[['rating_bin']]
-
-          X_test = test.drop(columns=['rating_bin'])
-          y_test = test[['rating_bin']]
-
-          return train, X_train, X_validate, X_test, y_train, y_validate, y_test
-    ```
+  Displays unified database
+    ```python 
+        new_df
+    ```  
+  
   
 *********************
 
-## <a name="explore"></a>Data Exploration:
-[[Back to top](#top)]
-- Python files used for exploration:
-    - aquire.py 
-    - prepare.py
-    
-
-
-### Takeaways from exploration:
-_Question 1 - Do video games on certain platforms get superb user ratings?_
-
-          - the most common platforms are `PC(microsoft Windows)`, `Play Station 4`, `X-Box one`, `Nintendo Switch`
- 
-  Sub Question 1.1 - What about the three lowest ratings (bad, very bad, awful)?  
-  
-          - PC (Microsoft Windows)
-          - MAC
-          - Nintendo Switch
-    
-_Question 2 - what is the most common genre in games that are superb?¶_
-
-          - the most common platforms are `Indie`, `Adventure`, `Role-Playing-RPG`, `Shooter`
- 
-   Sub Question 2.1 - What about the three lowest ratings (bad, very bad, awful)?
-      
-      
-         - Indie 
-         - adventure
-         - simulator
-         - indie  
-
-
-_Question 3 - What is the most common theme in games that are subperb (the highest rating)_ 
-
-         - the most common themes in the subperb is action, fantasy, science fiction, Open World.
-    
-  Question 3.1 - what is the most common theme in games that are three lowest ratings ((bad, very bad , awful))?
-  
-          - the most common game these in the lowest ratings Action, Science fiction, Horror, Fantasy 
-***
-
-## <a name="model"></a>Modeling:
-[[Back to top](#top)]
-
-### Model Preparation: 
-- Before modeling we had to drop addition columns and used Chi-Squared test for feature selection on the split data. We also made datframes to hold the models predictions.
-
-### Baseline
-    
-- Baseline Results: Mode of rating class "Alright" for a baseline of 0.28
-    
-
-- Chi-Squared selected features:
-    - features = ['offlinemax', 'onlinecoop', 'onlinemax', 'shooter', 'indie', 'PC (Microsoft Windows)', 'PlayStation3', 'Xbox360', 'iOS', 'PlayStation4', 'Xbox one', 'Science Fiction', 'Fantasy', 'Historical', 'Stealth', 'Comedy', 'Open world', 'Third person', 'Bird view / Isometric', 'Side view']
-
-***
-
-### Models:
-- Will run the following classification models:
-  - Random Forest
-  - Decision Tree
-  - Logistic Regression
-  - One Vs. Rest Classifier
-  - K-Nearest Neighbor
-
-    
-
-- For the models it was important that features of games (player perspective, genres, themes, ect.) be turned into their own binary columns, as well as converting any boolean columns. Doing this will greatly help the models predictions.
-    
-    
-#### Model 1: Random Forest
-
-- Train data RF best perforance: max depth of 27 and accuracy of 0.66
-- Validate data RF best perforance: max depth 15 had accuracy of 0.37
-
-### Model 2 : Decision Tree
-
-- Train data DT best perforance: max depth of 29 and accuracy of 0.63
-- Validate data DT best perforance: max depth 9 had accuracy of 0.38
-
-### Model 3 : Logistic Regression
-
-- Train data LR best perforance: 0.34
-- Validate data LR best perforance: 0.34
-
-### Model 4: One Vs. Rest
-
-- Train data LR best perforance: 0.34
-- Validate data LR best perforance: 0.34
-
-### Model 5: KNN
-
-- Train data KNN best perforance: max depth of 1 with an accuracy of 0.60
-- Validate data KNN best perforance: max depth of 23 with an accuracy of 0.34
-
-
-## Selecting the Best Model: 
-  - The best performing model was Random Forest with a max depth of 15 on validate. That will be the model used on test data.
-
-### Use Table below as a template for all Modeling results for easy comparison:
-
-| Model | Validation/Out of Sample accuracy | 
-| ---- | ----| 
-| Baseline | 0.284647 | 
-| Random Forest (RF) | 0.369651 |   
-| Decision Tree (DT) | 0.346415	 |  
-| Logistic Regression (LR) | 0.344007|  
-| K-Nearest Neighbor (KNN) | 0.344148	 |   
-| One Vs. Rest | 0.356869 | 
-
-- {Random Forest} model performed the best
-
-
-## Testing the Model
-
-- Model Testing Results
-  - All the models beat baseline on train, validate and test. We trained all of the models in two rounds; the first using Chi-Squared feature selection and the second without using it. All of the models preformed marginally better when trained with with all of the features we created in our dataset. Random Forest preformed the best on validate both with the feature selection and without. We ran it on the test data set and beat baseline with an accuracy of 0.388625
-***
-
 ## <a name="conclusion"></a>Conclusion:
 
-- After acquiring data from the IGDB API we were able to build five classification models that were trained on games with ratings, and all were able to beat the baseline. We used the model with the highest accuracy, Random Forest, to predict what class games without ratings would have based on their features. Having this insight will greatly improve any video games that will be made in the feature in regards to user ratings.
+- After acquiring data from data sources provided, I was able to successfully wrangle three data sets to build a unified fan database table that can be used to make business insights. The database is 500 rows and 19 columns.  It contains fans' contact information, summary of spending for retail and ticket purchases for each fan, and an unique identifier for each fan that acts as a primary key.
 
 
-## Next Steps: 
+## Next Steps and Recommendations: 
 
-- Next we would like to acquire more features from other API's like critic ratings and play through length to merge into the game_library dataframe, and giving the models even better accuracy.
-- Exploring games with low ratings to see what features contribute to low performance for game reviews.
-- Use NLP on reviews to better understand user/critic tone.
-- Use regression models to predict numeric ratings.
+- Create a Dashboard using unified database
+- Add additional demographic data like gender and race.
+
 
 [[Back to top](#top)]
