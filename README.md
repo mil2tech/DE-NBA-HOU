@@ -1,4 +1,4 @@
-<img src="rockets.jpeg" alt="drawing" width="150"/>
+<img src="rockets.jpeg" alt="drawing" width="700" height="405"/>
 
 # <a name="top"></a>Rockets Data Engineer Challenge
 ![]()
